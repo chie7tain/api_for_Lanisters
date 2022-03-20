@@ -12,6 +12,7 @@ const feeSchema = new mongoose_1.default.Schema({
     feeId: {
         type: String,
         required: true,
+        unique: true,
     },
     feeCurrency: {
         type: String,
@@ -38,5 +39,7 @@ const feeSchema = new mongoose_1.default.Schema({
         required: true,
     },
 });
+// create unique index on feeId
+feeSchema.index({ feeId: 1 }, { unique: true });
 const FeeModel = mongoose_1.default.model("Fee", feeSchema);
 exports.default = FeeModel;
