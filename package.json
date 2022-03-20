@@ -10,6 +10,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon dist/server.js",
+    "fast": "nodemon dist/fastifyApp.js",
     "compile": "tsc --watch"
   },
   "devDependencies": {
