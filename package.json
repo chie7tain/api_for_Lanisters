@@ -8,10 +8,13 @@
   "license": "MIT",
   "private": null,
   "scripts": {
-    "start": "node server.js",
+    "start": "node dist/server.js",
     "dev": "nodemon dist/server.js",
     "fast": "nodemon dist/fastifyApp.js",
     "compile": "tsc --watch"
+  },
+  "engines": {
+    "node": "v14.18.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
