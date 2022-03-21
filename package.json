@@ -14,19 +14,21 @@
     "compile": "tsc --watch"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.13",
     "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.3",
     "@types/node": "^17.0.21",
+    "morgan": "^1.10.0",
+    "@types/lodash": "^4.14.180",
     "typescript": "^4.6.2"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.180",
     "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "fastify": "^3.27.4",
-    "fastify-swagger": "^5.0.0",
     "lodash": "^4.17.21",
     "memoize-one": "^6.0.0",
     "mongoose": "^6.2.7"
