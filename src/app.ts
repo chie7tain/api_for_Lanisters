@@ -9,9 +9,13 @@ import createFeeSpec from "./controllers/fees";
 const app: Application = express();
 app.use(cors());
 app.use(bodyParser.json());
-if(process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
+
+app.get("/", (req: Request, res: Response) => {
+  res.send("Hello World");
+});
 
 app.post("/fees", createFeeSpec);
 

@@ -15,6 +15,9 @@ app.use(body_parser_1.default.json());
 if (process.env.NODE_ENV === "development") {
     app.use((0, morgan_1.default)("dev"));
 }
+app.get("/", (req, res) => {
+    res.send("Hello World");
+});
 app.post("/fees", fees_1.default);
 app.post("/compute-transaction-fee", compute_transaction_fee_1.default);
 exports.default = app;
